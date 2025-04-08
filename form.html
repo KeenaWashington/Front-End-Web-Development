@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Form</Form></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="frankfort.html">Frankfort</a></li>
+                <li><a href="louisville.html">Louisville</a></li>
+                <li><a href="mountwashington.html">Mount Washington</a></li>
+                <li><a href="#"class="active">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="section-container">
+            <section class="form-section">
+                <h2>Contact Us</h2>
+                <form id="contactForm" onsubmit="return validateEmail();">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="confirmEmail">Confirm Email Address:</label>
+                    <input type="email" id="confirmEmail" name="confirmEmail" required>
+
+                    <label for="question">Your Question:</label>
+                    <textarea id="question" name="question" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <!-- Table -->
+            <section class="info-section">
+                <h3>Additional Information</h3>
+                <img src="State Seal.png" alt="State Seal" class="state-seal">
+                <p>
+                    Visit <a href="https://www.kentuckytourism.com" target="_blank">Kentucky's official Tourism website</a> for more information.
+                </p>
+                <h4>Their Services</h4>
+                <ol>
+                    <li>Travel Planning</li>
+                    <li>Guided Tours</li>
+                    <li>Hotel map</li>
+                </ol>
+                <h4>Popular Destinations</h4>
+                <ul>
+                    <li>Louisville</li>
+                    <li>Frankfort</li>
+                    <li>Mount Washington</li>
+                </ul>
+                <h4>Contact Information</h4>
+                <table>
+                    <tr>
+                        <th>Department</th>
+                        <th>Phone Number</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td>Customer Support</td>
+                        <td>(123) 456-7895</td>
+                        <td>support@norealhelp.com</td>
+                    </tr>
+                    <tr>
+                        <td>Tour Bookings</td>
+                        <td>(123) 456-7893</td>
+                        <td>tours@wrongturn.com</td>
+                    </tr>
+                    <tr>
+                        <td>General Info</td>
+                        <td>(123) 456-7898</td>
+                        <td>info@reddit.com</td>
+                    </tr>
+                </table>
+            </section>            
+        </div>
+    </main>
+    <footer>
+        <p>Keena Washington Front End Web Development</p>
+    </footer>
+
+    <script>
+        //JavaScript
+        function validateEmail() {
+            var email = document.getElementById("email").value;
+            var confirmEmail = document.getElementById("confirmEmail").value;
+
+            if (email !== confirmEmail) {
+                alert("Listen buddy your email... it doesn't match...");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
