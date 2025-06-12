@@ -127,14 +127,11 @@ aside {
 .form-section input[type="email"], 
 .form-section textarea {
     width: calc(100% - 22px);
+    height: 100px;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-.form-section textarea {
-    height: 100px;
 }
 
 .form-section button {
