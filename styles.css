@@ -52,10 +52,6 @@ nav a {
     padding: 0.5rem 1rem;
 }
 
-nav a:hover {
-    background-color: #e6ae05;
-}
-
 nav a.active, nav a:active {
     background-color: #e6ae05;
     color: black;
@@ -94,21 +90,6 @@ section img {
     height: auto;
     margin-bottom: 1rem;
 }
-
-/* Highlighted Section Styles */
-.highlight:hover {
-    background-color: #bbdcf9;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, box-shadow 0.3s; 
-}
-
-/* Info Section Hover Effect */
-.info-section:hover {
-    background-color: #ebee9d; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
 /* Aside Styles */
 aside {
     float: right;
@@ -163,10 +144,6 @@ aside {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
-}
-
-.form-section button:hover {
-    background-color: #00257d;
 }
 
 /* Headings */
