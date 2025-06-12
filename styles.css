@@ -125,7 +125,6 @@ aside {
 
 .form-section textarea {
     width: calc(100% - 22px);
-    height: 100px;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
