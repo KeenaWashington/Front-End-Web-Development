@@ -123,8 +123,6 @@ aside {
     font-weight: bold;
 }
 
-.form-section input[type="text"], 
-.form-section input[type="email"], 
 .form-section textarea {
     width: calc(100% - 22px);
     height: 100px;
